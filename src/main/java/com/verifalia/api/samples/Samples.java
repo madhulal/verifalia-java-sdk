@@ -19,8 +19,8 @@ public class Samples {
 			try {
 				Samples sample = new Samples();
 				sample.queryVerifaliaServiceSample1(args[0], args[1]);
-				sample.queryVerifaliaServiceSample2(args[0], args[1]);	
-				sample.queryVerifaliaServiceSample3(args[0], args[1]);	
+				//sample.queryVerifaliaServiceSample2(args[0], args[1]);
+				//sample.queryVerifaliaServiceSample3(args[0], args[1]);
 			} catch(Exception ex) {
 				ex.printStackTrace();
 				System.exit(1);
@@ -46,7 +46,11 @@ public class Samples {
 		Validation result = restClient.getEmailValidations().submit(new String[] { 
 				"alice@example.com",
 				"bob@example.net",
-				"carol@example.org"
+				"carol@example.org",
+				"lalbglr@gmail.com",
+				"xyz@mozanta.com",
+				"sysadmin@mozanta.com",
+				"team1@gamil.com"
 			},
 			new WaitForCompletionOptions(10*60) // in seconds
 		);

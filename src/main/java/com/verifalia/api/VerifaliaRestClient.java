@@ -13,7 +13,7 @@ public class VerifaliaRestClient
 {
 	private static final String CLIENT_VERSION = "1.0.0";
 	private static final String DEFAULT_BASE_URL = "https://api.verifalia.com";
-	private static final String DEFAULT_API_VERSION = "v1.1";
+	private static final String DEFAULT_API_VERSION = "v1.4";
 	private static final String USER_AGENT_BASE = "verifalia-rest-client/java/";
 
 	/**

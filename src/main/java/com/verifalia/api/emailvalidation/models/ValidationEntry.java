@@ -2,9 +2,13 @@ package com.verifalia.api.emailvalidation.models;
 
 import java.util.Date;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
 /**
  * Represents a single validated entry within an email validation batch.
  */
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ValidationEntry {
     /**
      * The input string to validate.
@@ -164,7 +168,10 @@ public class ValidationEntry {
      */
     private Boolean isMailboxFailure;
 
-    //#endregion
+
+    private Boolean isFreeEmailAddress;
+
+	//#endregion
     
     /**
      * Constructs new object.
@@ -372,6 +379,14 @@ public class ValidationEntry {
      */
 	public Boolean getIsMailboxFailure() {
 		return isMailboxFailure;
+	}
+
+	public Boolean getIsFreeEmailAddress() {
+		return isFreeEmailAddress;
+	}
+
+	public void setIsFreeEmailAddress(final Boolean freeEmailAddress) {
+		isFreeEmailAddress = freeEmailAddress;
 	}
 
 	/** 
